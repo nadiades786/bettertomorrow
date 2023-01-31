@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html {
+            font-size: 150%;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .dropdown-menu {
+            display: inline-block;
+            clear: both;
+            overflow: hidden;
+            margin: 3rem;
+        }
+
+        .dropdown-menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: none;
+            min-width: 140px;
+            max-width: 240px;
+            background: #f0f0f0;
+            position: relative;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+        }
+
+        .dropdown-menu ul::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent #f0f0f0 transparent;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+        }
+
+        .dropdown-menu li {
+            font-size: 0.8rem;
+            display: block;
+            padding: 0;
+            margin: 0;
+            -moz-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+        }
+
+        .dropdown-menu li:nth-of-type(1) {
+            -moz-border-radius: 7px 7px 0 0;
+            -webkit-border-radius: 7px;
+            border-radius: 7px 7px 0 0;
+        }
+
+        .dropdown-menu li:last-of-type {
+            -moz-border-radius: 0 0 7px 7px;
+            -webkit-border-radius: 0;
+            border-radius: 0 0 7px 7px;
+        }
+
+        .dropdown-menu li:hover {
+            background: #1e026b;
+        }
+
+        .dropdown-menu a {
+            padding: 0.7rem 1.4rem;
+            text-decoration: none;
+            margin: 0;
+            display: inline-block;
+            color: #000000;
+            width: 100%;
+        }
+
+        .dropdown-menu a:hover {
+            color: #bfcc0c;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <nav class='dropdown-menu' role='navigation'>
+        <a href='#' id='profileMenu'>DropDown Menu</a>
+        <ul id='dropdown'>
+            <li>
+                <tr>
+                    <td>
+                        <img src="game icon.png" style="height:20px; width:20px; position: absolute; margin-top: 15px; margin-left: 10px;" />
+                    </td>
+                    <td>
+                        <a class='active' href='#' style="margin-left:20px ;">GAME</a>
+                    </td>
+                </tr>
+            </li>
+            <li>
+                <tr>
+                    <td>
+                        <img src="home icon.png" style="height:20px; width:20px; position: absolute; margin-top: 15px; margin-left: 10px;" />
+                    </td>
+                    <td>
+                        <a class='active' href='#' style="margin-left:20px ;">HOME</a>
+                    </td>
+                </tr>
+            </li>
+            <li>
+                <tr>
+                    <td>
+                        <img src="about icon.png" style="height:20px; width:20px; position: absolute; margin-top: 15px; margin-left: 10px;" />
+                    </td>
+                    <td>
+                        <a class='active' href='#' style="margin-left:20px ;">ABOUT</a>
+                    </td>
+                </tr>
+            </li>
+            <li>
+                <tr>
+                    <td>
+                        <img src="contact icon.png" style="height:20px; width:20px; position: absolute; margin-top: 15px; margin-left: 10px;" />
+                    </td>
+                    <td>
+                        <a class='active' href='#' style="margin-left:20px ;">CONTACT US</a>
+                    </td>
+                </tr>
+            </li>
+            <li>
+                <tr>
+                    <td>
+                        <img src="gallery icon.png" style="height:20px; width:20px; position: absolute; margin-top: 15px; margin-left: 10px;" />
+                    </td>
+                    <td>
+                        <a class='active' href='#' style="margin-left:20px ;">GALLERY</a>
+                    </td>
+                </tr>
+            </li>
+            <li>
+                <tr>
+                    <td>
+                        <img src="services icon.png" style="height:20px; width:20px; position: absolute; margin-top: 15px; margin-left: 10px;" />
+                    </td>
+                    <td>
+                        <a class='active' href='#' style="margin-left:20px ;">SERVICES</a>
+                    </td>
+                </tr>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+<script>
+        $("#profileMenu").mouseover(function () {
+            $("#dropdown").show(200);
+        });
+        $(".dropdown-menu").mouseleave(function () {
+            $("#dropdown").hide(400);
+        });
+
+</script>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Bisma's Cafe</h1>
+        <h2>If you are shopping above 1000 rupes so you will 20% Discount</h2>
+      <!--
+        <h2>if you are shopping  above 2000 rupes so you will get 25% discount</h2>
+            <h2> if you are shoping above 5000 rupees so you will  get 50% discount</2>
+      -->
+    </center>
+    <br>
+    <br>
+    <table border="1">
+        <tr>
+            <td>
+<p>Sandwich</p>
+            </td>
+           <td><img src="sand.jpeg" height="100" width="100"></td> 
+            <td><input type="number" value="0" id="sw"></td>
+            <td>Rs:50</td>
+            <td><p id="swp"></p>00</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Burger</p>
+            </td>
+            <td><img src="burger.jpg" height="100" width="100"></td> 
+            <td><input type="number" value="0" id="bur"></td>
+            <td>Rs: 80</td>
+            <td><p id="burp"></p>00</td>
+        </tr>
+        <td>
+            <p>Zinger Burger</p>
+        </td>
+        <td><img src="zinger burger.jpg" height="100" width="100"></td> 
+        <td><input type="number" value="0" id="zinbur"></td>
+        <td>Rs: 120</td>
+        <td><p id="zinburp"></p>00</td>
+    </tr>
+    <td>
+        <p>Shawrama</p>
+    </td>
+    <td><img src="shawrama.jpg" height="100" width="100"></td> 
+    <td><input type="number" value="0" id="sh"></td>
+    <td>Rs:90 </td>
+    <td><p id="shp"></p>00</td>
+</tr>
+<td>
+    <p>Zinger Shawrama</p>
+</td>
+<td><img src="zingershawarma.jpg" height="100" width="100"></td> 
+<td><input type="number" value="0" id="zinsh"></td>
+<td>Rs:100 </td>
+<td><p id="zinshp"></p>00</td>
+</tr>
+<td>
+    <p>Fries</p>
+</td>
+<td><img src="fries.jpg" height="100" width="100"></td> 
+<td><input type="number" value="0" id="fri"></td>
+<td>Rs:30 </td>
+<td><p id="frip"></p>00</td>
+</tr>
+<td>
+    <p>Small Pizza</p>
+</td>
+<td><img src="small pizza.jpg" height="100" width="100"></td> 
+<td><input type="number" value="0" id="sp"></td>
+<td>Rs: 250</td>
+<td><p id="spp"></p>00</td>
+</tr>
+<td>
+    <p>MediumPizza</p>
+</td>
+<td><img src="mideum pizza.jpg" height="100" width="100"></td> 
+<td><input type="number" value="0" id="mp"></td>
+<td>Rs:450 </td>
+<td><p id="mpp"></p>00</td>
+</tr>
+<td>
+    <p>LargePizza</p>
+</td>
+<td><img src="large pizza.jpg" height="100" width="100"></td> 
+<td><input type="number" value="0" id="lp"></td>
+<td>Rs:850 </td>
+<td><p id="lpp"></p>00</td>
+</tr>
+<td>
+    <p>Hotwings</p>
+</td>
+<td><img src="hotwings.jpg" height="100" width="100"></td> 
+<td><input type="number" value="0" id="hw"></td>
+<td>Rs: 350</td>
+<td><p id="hwp"></p>00</td>
+</tr>
+<td>
+    <p>Coldrink</p>
+</td>
+<td><img src="coldrink.jpg" height="100" width="100"></td> 
+<td><input type="number" value="0" id="cd"></td>
+<td>Rs: 120</td>
+<td><p id="cdp"></p>00</td>
+</tr>
+<tr>
+    <td>
+        <p>Total Items</p>
+    </td>
+    <td>
+        <p id="total">00</p>
+    </td>
+    <td><button onclick="Calculate()">Calculate</button></td>
+</tr>
+<tr>
+    <td>
+        <p>Total Amount</p>
+    </td>
+    <td>
+        <p id="totalA">00</p>
+    </td>
+    <tr>
+    <td>
+        <p> Amount After Discount </p>
+    </td>
+    <td>
+        <p id="totalAD">00</p>
+    </td>
+</tr>
+    </table>
+    <script>
+        function Calculate() {
+            var Sandwich = parseInt(document.getElementById("sw").value);
+            var SandwichP = Sandwich * 50; 
+            document.getElementById("swp").innerHTML ="Rs." + SandwichP;
+
+
+            var Burger = parseInt(document.getElementById("bur").value);
+            var BurgerP = Burger * 80;
+            document.getElementById("burp").innerHTML ="Rs." + BurgerP;
+            
+            var ZingerBurger = parseInt(document.getElementById("zinbur").value);
+            var ZingerBurgerP = ZingerBurger * 120;
+            document.getElementById("zinburp").innerHTML ="Rs." + ZingerBurgerP;
+
+            var Shawrama = parseInt(document.getElementById("sh").value);
+            var shawramaP = Shawrama * 90;
+            document.getElementById("shp").innerHTML ="Rs. " + shawramaP
+
+            var ZingerShawrama = parseInt(document.getElementById("zinsh").value);
+            var zingershawarmaP = ZingerShawrama  * 100;
+            document.getElementById("zinshp").innerHTML ="Rs. " + zingershawarmaP; 
+
+            var Fries = parseInt(document.getElementById("fri").value);
+            var FriesP = Fries * 50;
+            document.getElementById("frip").innerHTML ="Rs. "  + FriesP;
+
+            var Hotwings = parseInt(document.getElementById("hw").value);
+            var HotwingsP = Hotwings * 350;
+            document.getElementById("hwp").innerHTML ="Rs. "  + HotwingsP;
+
+            var SmallPizza = parseInt(document.getElementById("sp").value);
+            var  SmallPizzaP = SmallPizza * 250; 
+            document.getElementById("spp").innerHTML ="Rs." +  SmallPizzaP;
+
+            var MediumPizza = parseInt(document.getElementById("mp").value);
+            var MediumPizzaP = MediumPizza * 450; 
+            document.getElementById("mpp").innerHTML ="Rs." + MediumPizzaP;
+
+            var LargePizza = parseInt(document.getElementById("lp").value);
+            var LargePizzaP =LargePizza  * 850; 
+            document.getElementById("lpp").innerHTML ="Rs." + LargePizzaP;
+
+            var Coldrink = parseInt(document.getElementById("cd").value);
+            var ColdrinkP =Coldrink  *120; 
+            document.getElementById("cdp").innerHTML ="Rs." +  ColdrinkP;
+
+            var total = Sandwich + Burger + ZingerBurger + Shawrama + ZingerShawrama + Fries
+             + SmallPizza + MediumPizza  + LargePizza + Coldrink + Hotwings ;
+
+             var totalP = SandwichP + BurgerP + ZingerBurgerP + shawramaP + zingershawarmaP + FriesP
+             + SmallPizzaP + MediumPizzaP  + LargePizzaP + ColdrinkP + HotwingsP ;
+            document.getElementById("total").innerHTML = total;
+            document.getElementById("totalA").innerHTML = "Rs." + totalP;
+        
+            if(totalP > 1000)
+            {
+                var discount = (totalP / 100) * 20;
+                var TotalAD = totalP - discount ; 
+                document.getElementById("totalAD").innerHTML ="Rs. " + TotalAD + (" After 20% Discount") ; 
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* CSS Reset & Global Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image:url(https://www.shutterstock.com/image-vector/calculator-button-number-stickers-illustration-212105485);
+background-repeat: no-repeat;
+  transition: 0.8s all;
+}
+body{
+  background-repeat: no-repeat;
+  background-size: 1500px 1500px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 1.5%;
+  color: red;
+  text-shadow: 2px 2px 4px blue;
+  text-decoration: underline;
+}
+.container {
+  width: 300px;
+}
+.result {
+  width: 59.1%;
+}
+input {
+  padding: 25px;
+  color:darkblue;
+  font-size: 1em;
+  cursor: pointer;
+  width: 70px;
+  background-color:indigo;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+  margin-bottom: 3px;
+}
+input[type="button"] {
+  color: rgb(122, 122, 122);
+}
+input[type="text"] {
+  background-color: rgb(255, 255, 255);
+  width: 218px;
+}
+input[type="button"]:hover {
+  background-color:crimson;
+  color:darkblue;
+}
+#clear {
+  color:darkblue;
+  background-color:crimson
+}
+button {
+  border: none;
+  background-color: rgb(41, 38, 38);
+  padding: 8px;
+  color: white;
+  margin: 2px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+  background-color: rgb(41, 38, 38);
+  padding: 8px;
+  color: white;
+  margin: 2px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+
+  font-size: 0.8em;
+  font-weight: 200;
+}
+.bottom-buttons {
+  display: flex;
+  margin-left: -2.3px;
+}
+.fab {
+  font-size: 1.1em;
+}

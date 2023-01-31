@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="JavaScript">
+     
+        function calculate(){
+        var Day = document.getForm.getDay.value
+        var Month = document.getForm.getMonth.value
+        var Year = document.getForm.getYear.value
+        Month = Month - 1
+        var theDate = new Date()
+        theDate.setDate(Day)
+        theDate.setMonth(Month)
+        theDate.setYear(Year)
+        var month = Month + 1
+        var dayArray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday") 
+        alert("The day is: " + dayArray[theDate.getDay()] + "( " + Day + "/" + month + "/" + Year + " )")
+        }  
+        </script>
+         <style>
+
+            h1{
+                color: crimson;
+                font-size: 30px;
+            }
+            .button2{
+                background-color: darkblue;
+                text-align: center;
+                color: crimson;
+                font-size: 60px;
+                padding: 10px 24px;
+                width:300px;
+                border-radius: 20px;
+            }
+/*.button1:hover{
+    background-color: darkcyan;
+
+}*/
+        body{
+            background-repeat: no-repeat;
+            background-size: 1500px;
+        }
+                </style>
+</head>
+<body background="back pick calculater.jpg">
+    <form name="getForm">
+        <center>
+        <h1>Date to Day Converter</h1>
+        Enter a date:<br />
+        Day: <input type="text" name="getDay" length=2 value="01" size="2" />
+        Month: <input type="text" name="getMonth" length=2 value="01" size="2" />
+        Year: <input type="text" name="getYear" length=4 value="2005" size="4" />
+        <br />
+      <br>
+      <br>
+        <input type="button" value="Calculate!" onClick=calculate() class="button2"/>
+    </center>
+        </form>
+    
+</body>
+
+<br>
+<br>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Calculator</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles/light.css" id="theme" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+<body background="calculation.jpg">
+  <div class="wrapper">
+    <div class="container">
+      <h1>Calculator</h1>
+
+      <div class="first-row">
+        <input type="text" name="result" class="result" id="result" value="" placeholder="Result" readonly />
+        <input type="button" value="C" onclick="clearScreen()" id="clear" />
+      </div>
+      <div class="second-row">
+        <input type="button" value="1" onclick="liveScreen(1)" id="one" />
+        <input type="button" value="2" onclick="liveScreen(2)" id="two" />
+        <input type="button" value="3" id="three" onclick="liveScreen(3)" />
+        <input type="button" value="+" onclick="liveScreen('+')" />
+      </div>
+      <div class="third-row">
+        <input type="button" value="4" id="four" onclick="liveScreen(4)" />
+        <input type="button" value="5" id="five" onclick="liveScreen(5)" />
+        <input type="button" value="6" id="six" onclick="liveScreen(6)" />
+        <input type="button" value="-" onclick="liveScreen('-')" />
+      </div>
+      <div class="fourth-row">
+        <input type="button" value="7" id="seven" onclick="liveScreen(7)" />
+        <input type="button" value="8" id="eight" onclick="liveScreen(8)" />
+        <input type="button" value="9" id="nine" onclick="liveScreen(9)" />
+        <input type="button" value="x" onclick="liveScreen('*')" />
+      </div>
+      <div class="fifth-row">
+        <input type="button" value="/" onclick="liveScreen('/')" />
+
+        <input type="button" value="0" id="zero" onclick="liveScreen(0)" />
+        <input type="button" value="." class="dot" onclick="liveScreen('.')" />
+        <input type="button" value="=" onclick="result.value = eval(result.value)" />
+      </div>
+      <div class="bottom-buttons">
+        <a href="#"><i class="fab fa-github"></i>
+          Source</a>
+        <button onclick="changeTheme()" id="dark-mode">
+          Dark Mode 🌙
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Fontawesome Script -->
+  <script src="https://kit.fontawesome.com/f28b055962.js" crossorigin="anonymous"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

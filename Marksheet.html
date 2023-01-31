@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: crimson;
+            background-color: darkcyan;
+        }
+        button{
+            color: darkcyan;
+            background-color: crimson;
+            font-size: 30px;
+        }
+p{
+    color: wheat;
+}
+    </style>
+</head>
+<body bgcolor="blue">
+    <center>
+    <h1>7 Class Marksheet</h1>
+    <p>Science</p>
+    <input type="text" id="sci"/>
+    <br>
+    <p>Maths</p>
+    <input type="text" id="mat"/>
+    <br>
+    <p>Computer</p>
+    <input type="text" id="com"/>
+    <br>
+    <p>English</p>
+    <input type="text" id="eng"/>
+    <br>
+    <p>Urdu</p>
+    <input type="text" id="urd"/>
+    <br>
+    <p>Geo</p>
+    <input type="text" id="ge"/>
+    <br>
+    <p>History</p>
+    <input type="text" id="his"/>
+    <br>
+    <p>Isl</p>
+    <input type="text" id="isl"/>
+    <br>
+    <p>Homecnomecs</p>
+    <input type="text" id="homec"/>
+    <br>
+    <button onclick="Calculate()">Calculate</button>
+    <br>
+    <p>Total numbers</p>
+    <p  id="tm"></p>
+    <br>
+    <p>Percentage</p>
+    <p  id="per"></p>
+
+    <br>
+    <p>Grade</p>
+    <p  id="grd"></p>
+    <script>
+    function Calculate(){
+        var totalm;
+        var Maths=parseInt(document.getElementById("mat").value) ;
+        var Science=parseInt(document.getElementById("sci").value) ;
+        var Computer=parseInt(document.getElementById("com").value) ;
+        var English=parseInt(document.getElementById("eng").value) ;
+        var History=parseInt(document.getElementById("his").value) ;
+        var Homecnomecs=parseInt(document.getElementById("homec").value) ;
+        var Isl=parseInt(document.getElementById("isl").value) ;
+        var Geo=parseInt(document.getElementById("ge").value) ;
+        var Urdu=parseInt(document.getElementById("urd").value) ;
+        totalm= Maths+Science+Computer+English+History+Urdu+Geo+Homecnomecs+Isl;
+        // obtain number ko divide krty hain total number or jo ans ata hai usko 100 se multiply 
+        document.getElementById("tm").innerHTML=totalm;
+        
+        var Percentage = (totalm / 500) * 100;
+        document.getElementById("per").innerHTML = Percentage +"%";
+        
+    // ager 80 se zada A1
+        // agar 70 se A
+            // agar 60 se B
+               // agar 50 se C
+                 //wrna F
+
+//sub se phly if ata phir beach me else if or last me else
+
+if(Percentage > 80)
+{
+    document.getElementById("grd").innerHTML = "A1";
+} else if(Percentage  > 70)
+{
+    document.getElementById("grd").innerHTML = "A";
+} else if(Percentage  > 60)
+{
+    document.getElementById("grd").innerHTML = "B";
+} else if(Percentage  > 60)
+{
+    document.getElementById("grd").innerHTML = "B";
+} else if(Percentage  > 50)
+{
+    document.getElementById("grd").innerHTML = "C";
+}else{
+    document.getElementById("grd").innerHTML = "F";   
+}
+
+}
+</center>
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style type="text/css">
+    h1{
+-moz-animation-duration: 10s;
+       -webkit-animation-duration: 10s;
+       -moz-animation-name: slidein; 
+       -webkit-animation-duration: slidein;   
+    }
+    @-moz-keyframes siidein{
+from{
+ margin-left: 100%;
+  width: 300%
+}
+75%{
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+}
+to{
+    margin-left:0% ;
+    width: 100%;
+}
+}
+@-webkit-keyframes slidein{
+from{
+    margin-left: 100%;
+    width: 300%;
+}
+75%{
+    font-size: 300%;
+    margin-left: 100%;
+    width: 150%;
+}
+to{
+    margin-left: 10%;
+    width: 100%;
+}
+}
+h1{
+    color: indianred;
+    font-size: 90px;
+}
+p{
+    color: indigo;
+    font-size: 50px;
+}
+button{
+    color: lightcoral;
+    background-color: lightseagreen;
+    font-size: 40px;
+}
+marquee{
+    font-size: 40px;
+    color: midnightblue;
+}
+</style>
+</head>
+<body>
+    <marquee >bisma website work
+<img src="MY FAVOURITE FLOWEER.jpg" height="300" width="300">
+    </marquee>
+ <h1>bisma</h1>
+ <p> bisma learning web desiging course</p>
+ <marquee>bisma web designing
+     <img src="NICE BARBIE.jpg" height="300" width="300">
+ </marquee>
+ <button onclick="myfunction()">reload page</button>
+ <script>
+function myfunction(){
+ location.reload();
+}
+ </script>   
+</body>
+</html>

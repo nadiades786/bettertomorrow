@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script>
+
+
+        $(document).ready(function(){
+        
+        
+          $("#fi").click(function(){
+        
+            $("#div1").fadeIn();
+            
+          });
+          $("#div2").hover(function(){
+        
+        $("#div2").fadeOut();
+        
+      });
+          
+      $("#div3").hover(function()
+{
+    $("#div3").slideUp()
+});
+$("#div4").hover(function()
+{
+    $("#div4").slideDown()
+}
+);
+$("#st").click(function()
+{
+$("#div5").slideToggle();
+}
+);
+$("#div6").hover(function(){
+        $("#div6").hide();
+    });
+    $("#s").click(function(){
+        $("#div7").show();
+    });
+    $("#div8").hover(function()
+        {
+            $("#div8").animate({backgroundColor: 'red'});
+        });
+        $("#div9").hover(function()
+        {
+            $("#div9").animate({opacity:'0.5'});
+        });
+        $("#div10").hover(function()
+        {
+            $("#div10").animate({opacity:'1'});
+        });
+        $("#div11").hover(function()
+        {
+            $("#div11").animate({height:'100px', width:'100px'});
+        });
+        $("#div12").hover(function()
+        {
+            $("#div12").animate({right:'350px'});
+        });
+        $("#div13").hover(function()
+        {
+            $("#div13").animate({left:'0px'});
+        });
+        $("#div14").hover(function()
+        {
+            $("#div14").animate({borderRadius: 150});
+        });
+        });
+        </script>
+</head>
+<body>
+    <button id="fi">Fade in</button>
+    <br>
+    <img id="div1" src="happy.jpg" style="height: 50px; width: 50px;  display: none;" >
+<br>
+<button id="fo">Fade out</button>
+<br>
+<br>
+<img id="div2" src="sad.jpg" style="height: 50px; width: 50px;" >
+<br>
+<button id="su">Slide Up</button>
+<br>
+<img id="div3" src="crying.jpg" style="height: 50px; width: 50px;" >
+<br>
+<button id="sd">Slide Down</button>
+<br>
+<img id="div4" src="emotional.jpg" style="height: 50px; width: 50px;  display: none;" >
+<br>
+<button id="st">Slide Toggle</button>
+<br>
+<img id="div5" src="angry.jpg" style="height: 50px; width: 50px;" >
+<br>
+<button id="h">Height</button>
+<br>
+<img id="div6" src="drinking.jpg" style="height: 50px; width: 50px;" >
+<br>
+<button id="s">Show</button>
+<br>
+<img id="div7" src="reading.jpg" style="height: 50px; width: 50px;  display: none;" >
+<br>
+<button id="cc">Color Change</button>
+<br>
+<div id="div8" style="height: 50px; width: 50px; background-color: black;"></div>
+<br>
+<button id="ou">OpacityUp</button>
+<br>
+<img id="div9" src="watching.jpg" style="height: 50px; width: 50px;" >
+<br>
+<button id="od">OpacityDown</button>
+<br>
+<img id="div10" src="heart.jpg" style="height: 50px; width: 50px; opacity: 0.3;" >
+<br>
+<button id="sb">Size Big</button>
+<br>
+<img id="div11" src="party.jpg" style="height: 50px; width: 50px;" >
+<br>
+<br>
+<br>
+<br>
+<button id="mr">Move Right</button>
+<br>
+<img id="div12" src="celebrate.jpg" style="height: 50px; width: 50px; position: absolute;" >
+<br>
+<br>
+<br>
+<button id="ml">Move Left</button>
+<br>
+<img id="div13" src="writing.jpg" style="height: 50px; width: 50px; position: absolute; left: 350px;" >
+<br>
+<br>
+<br>
+<button id="sc">Shape Change</button>
+<br>
+<img id="div14" src="runing1.jpg" style="height: 100px; width: 100px; position: absolute;" >
+</body>
+</html>

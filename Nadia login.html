@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="grey">
+    <center>
+    <table>
+        
+        <tr>
+            <td>
+                <p>EMAIL</p>
+            </td>
+            <td>
+                <input type="text" id="email" placeholder="Enter Your Email Address" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>PASSWORD</p>
+            </td>
+            <td>
+                <input type="password" id="pass" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="login()">Login</button>
+            </td>
+        </tr>
+    
+    </table>
+<script>
+    function login()
+    {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("pass").value;
+
+        if(email == "Nadiadesigner@gmail.com" && password == "Pakistan123" )
+        {
+            alert("Welcome " + email)
+        }else if (email == "abdullah@gmail.com" && password == "Karachi123")
+        {
+            alert("Welcom" + email)
+        }else{
+            alert("Wrong Email or Password")
+        }
+    
+    }
+</script>
+</center>
+</body>
+</html>
